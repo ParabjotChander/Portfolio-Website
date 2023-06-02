@@ -4,8 +4,10 @@
 #body{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-image: url("../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg");
-  background-repeat: no-repeat;
+  border: 10px solid #24252A;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
   height: 490px;
   align-items: center;
 }
@@ -42,6 +44,7 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   font-size: 200%;
+  margin-left: 10px;
 }
 
 #introD{
@@ -51,12 +54,9 @@
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 160%;
+  margin-left: 10px;
 }
 
-#button{
-  padding-top: 50px;
-  text-align: center;
-}
 
 #ref1{
   display: inline;
@@ -79,7 +79,7 @@
 }
 
 #social{
-  padding-top: 70px;
+  padding-top: 40px;
 }
 
 .imageLinks1{
