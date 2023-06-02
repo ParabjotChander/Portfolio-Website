@@ -1,0 +1,149 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#name{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow: hidden;
+}
+
+.lettersAB{
+  background-color: #24252A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.lettersAB:nth-of-type(even){
+  transform: translateX(-400%);
+}
+
+.lettersAB.show{
+  transform: translateX(0);
+}
+
+.nbaHuge{
+  color: white;
+  font-size: 200%;
+  
+}
+
+.nbaSmall{
+  color: white;
+  font-size: 100%;
+  font-style: italic;
+}
+
+/* Work Experience */
+#work{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg");
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  width: 100%;
+  min-height: 400px;
+}
+
+#work h2{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+#work p{
+  margin: 10px;
+  font-style: italic;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+}
+
+#work ul{
+  list-style: none;
+}
+
+#work ul li{
+  margin: 5px;
+  font-size: 1.1rem;
+  color: black;
+}
+
+/* Education */
+
+#school{
+  background-color: #24252A;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+}
+
+#school h2{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+
+.sub{
+  color: white;
+  font-size: 1.25rem;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.det{
+  color: white;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 5px;
+}
+
+/* Skills */
+
+#skills{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  width: 100%;
+  height: 300px;
+  border: 2px solid black;
+}
+
+#skills h2{
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+#skills p{
+  margin-bottom: 5px;
+  font-size: 1.5rem;
+}
+
+#skills ul{
+  list-style-type: none;
+}
+
+#skills ul li {
+  margin: 5px;
+  font-size: 1.25rem;
+}
