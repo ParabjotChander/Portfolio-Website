@@ -7,6 +7,7 @@
       <meta charset="UTF-8">
       <title>Contact</title>
       <link rel="stylesheet" href="css/nav_style.css">
+      <link rel="stylesheet" href="css/contact_style.css">
    
    </head>
 
@@ -20,9 +21,9 @@
             
             <ul>
                <li> <a href="home.html"> Home </a> </li>
-               <li> <a href="contact.html"> Contact</a> </li>
-               <li> <a href="projects.html"> Projects</a> </li>
                <li> <a href="about.html"> About</a> </li>
+               <li> <a href="projects.html"> Projects</a> </li>
+               <li> <a href="contact.html"> Contact</a> </li>
             </ul>
          
          </nav>
@@ -33,6 +34,40 @@
          
       </div>
       
+      <div id="contactBody">
+
+         <form action="https://httpbin.org/get" method="post">
+            
+               <label id="top" for="fname">First Name:</label> <br>
+               <input type="text" id="fname" name="fname"> <br>
+
+               <label for="lname">Last Name:</label> <br>
+               <input type="text" id="lname" name="lname"> <br>
+
+               <label for="email">Email:</label> <br>
+               <input type="email" id="email" name="email"> <br> <br>
+            
+               <p id="msg"> Enter a Message </p>
+               <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            
+               <br>
+               <br>
+            
+               <input type="submit" value="Submit">
+
+             
+         
+         </form>
+      
+      </div>
+      
+      <div id="socialMedia">
+         
+        <a href="https://www.linkedin.com/in/parabjot-chander-1a76aa213/"> <img class="contactS" src="images/linkedin.png" alt="linkedin Logo" loading="lazy"> </a>
+        <a href="https://github.com/ParabjotChander"> <img class="contactS" src="images/github.png" alt="github logo" loading="lazy"> </a>
+
+      </div>
+      
       
       <footer id="foot">
          
@@ -40,17 +75,17 @@
             
             <p> <a href="home.html"> Home </a> </p>
             <p> | </p>
-            <p> <a href="contact.html"> Contact</a> </p>
+            <p> <a href="about.html"> About</a> </p>
             <p> | </p>
             <p> <a href="projects.html"> Projects</a> </p>
             <p> | </p>
-            <p> <a href="about.html"> About</a></p>
+            <p> <a href="contact.html"> Contact</a></p>
             <p> | </p>
 
          </div>
       
          <div id="lowerFoot">
-            <p>&copy;Copyrights 2023</p>
+            <p>&copy;Copyright 2023</p>
          </div>
       
       </footer>

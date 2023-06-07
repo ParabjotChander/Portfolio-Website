@@ -1,0 +1,38 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2{
+  text-align: center;
+  font-size: clamp(100%, 150%, 200%);
+  margin-top: 10px;
+}
+
+.project ul li{
+  font-size: clamp(100%, 150%, 200%);
+  margin: 20px 10px;
+}
+
+#describe{
+  margin: 10px 0;
+}
+
+.project{
+  min-height: 300px;
+  margin-bottom: 10px;
+  border: 1px solid #24252A;
+  border-radius: 5px;
+}
+
+.project.odd{
+  background-color: white;
+}
+
+.project.even{
+  background-color: #24252A;
+
+}
+
+.project.even h2, .project.even ul li{
+  color: white;
+}
