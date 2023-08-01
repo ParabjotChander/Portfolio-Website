@@ -14,7 +14,7 @@ body{
   border-bottom: 5px solid #24252A;
   margin-top: 10px;
   margin-bottom: 10px;
-  min-height: 620px;
+  min-height: 615px;
   align-items: center;
 }
 
@@ -29,7 +29,7 @@ body{
 }
 
 .profile{
-  /* background-color: red; */
+  /* background-color: red; */ 
   display: flex;
   justify-content: center;
   width: 100%;
@@ -39,8 +39,8 @@ body{
 
 #prof{
   border-radius: 50px;
-  height: 300px;
-  width: 300px;
+  height: 70%;
+  width: 40%;
   border: 3px solid #24252A;
 }
 
@@ -50,7 +50,7 @@ body{
   text-decoration: underline;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  font-size: 200%;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
   margin-left: 10px;
 }
 
@@ -60,7 +60,7 @@ body{
   font-style: italic;
   text-align: center;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 160%;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
   margin-left: 10px;
 }
 
@@ -90,16 +90,16 @@ body{
 }
 
 .imageLinks1{
-  height: 50px;
-  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
   border-radius: 35px;
   margin-left: 80px;
   margin-right: 20px;
 }
 
 .imageLinks2{
-  height: 50px;
-  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
   border-radius: 35px;
 }
 
