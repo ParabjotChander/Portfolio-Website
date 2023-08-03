@@ -2,37 +2,61 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+#projects_description{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  row-gap: 100px;
+}
+
+@media (max-width: 1500px) {
+  #projects_description {
+    grid-template-columns: auto;
+  }
+}
+
 h2{
   text-align: center;
-  font-size: clamp(100%, 150%, 200%);
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+
+a img{
+  max-height: 50px;
+  max-width: 50px;
+  
+}
+
+a{
+  text-decoration: underline;
+  color: #24252A;
+}
+
+.project_image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 500px;
+  /* border: 1px solid #24252A; */
+}
+
+.project_image img{
+  width: 100%;
+}
+
+.project_writing ul{
+  list-style: none;
+}
+
+.project_writing p, .project_writing ul li {
+  font-size: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
   margin-top: 10px;
 }
 
-.project ul li{
-  font-size: clamp(100%, 150%, 200%);
-  margin: 20px 10px;
+.project_writing{
+  max-width: 400px;
 }
 
-#describe{
-  margin: 10px 0;
-}
 
-.project{
-  min-height: 300px;
-  margin-bottom: 10px;
-  border: 1px solid #24252A;
-  border-radius: 5px;
-}
-
-.project.odd{
-  background-color: white;
-}
-
-.project.even{
-  background-color: #24252A;
-
-}
-
-.project.even h2, .project.even ul li{
-  color: white;
-}
