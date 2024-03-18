@@ -12,7 +12,6 @@
   min-height: 50px;
 }
 
-
 #nav nav ul li{
   list-style-type: none;
   display: inline-block;
@@ -74,4 +73,13 @@
 #body{
   background-color: white;
   width: 100%;
+}
+
+@media(max-width: 300px){
+  #nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

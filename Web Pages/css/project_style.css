@@ -11,12 +11,6 @@
   row-gap: 100px;
 }
 
-@media (max-width: 1500px) {
-  #projects_description {
-    grid-template-columns: auto;
-  }
-}
-
 h2{
   text-align: center;
   font-size: clamp(1rem, 1vw + 1rem, 2rem);
@@ -39,7 +33,6 @@ a{
   align-items: center;
   justify-content: space-around;
   max-width: 500px;
-  /* border: 1px solid #24252A; */
 }
 
 .project_image img{
@@ -57,6 +50,12 @@ a{
 
 .project_writing{
   max-width: 400px;
+}
+
+@media (max-width: 1500px) {
+  #projects_description {
+    grid-template-columns: auto;
+  }
 }
 
 

@@ -1,29 +1,23 @@
-html{
-  height: 100%;
+body{
+  height: 100vh;
 }
 
-body{
-  height: 100%;
-}
 /* Body styling */
 
 #body{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-top: 5px solid #24252A;
-  border-bottom: 5px solid #24252A;
-  margin-top: 10px;
   margin-bottom: 10px;
   min-height: 615px;
   align-items: center;
+  background-color: whitesmoke;
 }
 
 .htext{
   display: flex;
-  justify-items: center;
   flex-direction: column;
+  justify-items: space-between;
   align-items: center;
-  /* background-color: blue; */
   height: 100%;
   width: 100%;
 }
@@ -38,10 +32,10 @@ body{
 }
 
 #prof{
-  border-radius: 50px;
-  height: 70%;
+  border-radius: 60%;
+  height: 60%;
   width: 40%;
-  border: 3px solid #24252A;
+  border: 2px solid whitesmoke;
 }
 
 #introT{
@@ -93,8 +87,6 @@ body{
   max-height: 50px;
   max-width: 50px;
   border-radius: 35px;
-  margin-left: 80px;
-  margin-right: 20px;
 }
 
 .imageLinks2{
@@ -106,11 +98,11 @@ body{
  /* Increment Counter Code  */
 
 #incrementCounter{
-  display: grid;
-  grid: gap 5px; 
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 10px;
-  align-content: center;
   min-height: 190px;
 }
 
@@ -131,5 +123,27 @@ body{
 
 .numbers{
   margin-top: 10px;
-  font-size: 60px;
+  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+}
+
+/* Media Queries*/
+@media screen and (max-width: 1600px) {
+  
+  #body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+
+  #prof{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 30%;
+    height: 30%;
+  }
+
+
 }
