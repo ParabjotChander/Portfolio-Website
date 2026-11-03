@@ -1,29 +1,41 @@
-body{
-  height: 100vh;
+/* Base & Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* Body styling */
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.6;
+}
 
-#body{
+/* Body Hero Section Styling */
+#body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 10px;
-  min-height: 615px;
+  gap: 2rem;
+  padding: 4rem 2rem 2rem 2rem;
+  min-height: 80vh;
   align-items: center;
   background-color: whitesmoke;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.htext{
+.htext {
   display: flex;
   flex-direction: column;
-  justify-items: space-between;
+  justify-content: space-between;
   align-items: center;
   height: 100%;
   width: 100%;
+  text-align: center;
 }
 
-.profile{
-  /* background-color: red; */ 
+.profile {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -31,119 +43,78 @@ body{
   align-items: center;
 }
 
-#prof{
-  border-radius: 60%;
-  height: 60%;
-  width: 40%;
-  border: 2px solid whitesmoke;
+#prof {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#introT{
-  padding-top: 80px;
+#introT {
   color: black;
   text-decoration: underline;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-  margin-left: 10px;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
+  margin-bottom: 1.5rem;
 }
 
-#introD{
-  padding-top: 10px;
-  color: black;
-  font-style: italic;
-  text-align: center;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-  margin-left: 10px;
+#introD {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #333;
+  text-align: justify;
+  font-size: clamp(1rem, 1vw + 0.8rem, 1.25rem);
+  text-indent: 30px;
 }
 
-
-#ref1{
-  display: inline;
-  border-radius: 50px;
-  border-style: solid;
-  margin-right: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding: 5px 5px 5px 5px;
-  font-size: 140%;
-}
-
-#ref2{
-  display: inline;
-  border-radius: 50px;
-  border-style: solid;
-  padding: 5px 5px 5px 5px;
-  margin-left: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 140%;
-}
-
-#social{
-  padding-top: 40px;
-}
-
-.imageLinks1{
-  max-height: 50px;
-  max-width: 50px;
-  border-radius: 35px;
-}
-
-.imageLinks2{
-  max-height: 50px;
-  max-width: 50px;
-  border-radius: 35px;
-}
-
- /* Increment Counter Code  */
-
-#incrementCounter{
+#social {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 10px;
-  min-height: 190px;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.words{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  padding-top: 10px;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 120%;
+.imageLinks1,
+.imageLinks2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
 }
 
-.details{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.imageLinks1:hover,
+.imageLinks2:hover {
+  transform: scale(1.1);
 }
 
-.numbers{
-  margin-top: 10px;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
-}
-
-/* Media Queries*/
-@media screen and (max-width: 1600px) {
-  
-  #body{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 30px;
+/* Responsive Media Queries */
+@media screen and (max-width: 992px) {
+  #body {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1rem;
+    min-height: auto;
   }
 
-
-  #prof{
-    margin-top: 40px;
-    margin-bottom: 20px;
-    width: 30%;
-    height: 30%;
+  .htext {
+    gap: 1.5rem;
   }
 
+  #introT {
+    padding-top: 20px;
+    margin-left: 0;
+  }
 
+  #prof {
+    max-width: 220px;
+    margin: 1rem 0;
+  }
+
+  #introD {
+    text-indent: 20px;
+    padding: 1rem;
+  }
 }

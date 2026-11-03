@@ -1,60 +1,96 @@
-*{
+/* Global Reset & Base Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+  color: #24252A;
+  line-height: 1.6;
 }
 
-#projects_description{
-  margin-top: 20px;
-  margin-bottom: 40px;
+/* Projects Section Container */
+#projects_description {
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  max-width: 1400px;
   display: grid;
-  grid-template-columns: auto auto;
-  justify-content: space-around;
-  row-gap: 100px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  gap: 4rem 2rem;
 }
 
-h2{
+h2 {
   text-align: center;
-  font-size: clamp(1rem, 1vw + 1rem, 2rem);
+  font-size: clamp(1.5rem, 1.5vw + 1rem, 2.2rem);
+  margin-bottom: 1rem;
 }
 
-a img{
+a img {
   max-height: 50px;
   max-width: 50px;
-  
+  transition: transform 0.2s ease;
 }
 
-a{
+a img:hover {
+  transform: scale(1.1);
+}
+
+a {
   text-decoration: underline;
   color: #24252A;
 }
 
-.project_image{
+/* Individual Project Elements */
+.project_image {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  max-width: 500px;
-}
-
-.project_image img{
   width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.project_writing ul{
-  list-style: none;
+.project_image img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.project_writing p, .project_writing ul li {
-  font-size: clamp(0.5rem, 1vw + 0.5rem, 1.5rem);
+.project_writing {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.project_writing ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+.project_writing p, 
+.project_writing ul li {
+  font-size: clamp(0.95rem, 0.8vw + 0.5rem, 1.2rem);
   margin-top: 10px;
 }
 
-.project_writing{
-  max-width: 400px;
-}
-
-@media (max-width: 1500px) {
+/* Responsive Media Queries */
+@media screen and (max-width: 992px) {
   #projects_description {
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 0 1rem;
+    margin: 2rem auto;
+  }
+
+  .project_image, 
+  .project_writing {
+    max-width: 100%;
   }
 }
 

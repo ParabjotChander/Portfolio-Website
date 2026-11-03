@@ -1,119 +1,152 @@
-*{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* Global Reset & Base Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-#name{
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: whitesmoke;
+  color: black;
+  line-height: 1.6;
+}
+
+/* Name / Hero Animation Section */
+#name {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   overflow: hidden;
+  padding: 2rem 1rem;
 }
 
-.lettersAB{
+.lettersAB {
   background-color: #24252A;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   height: 200px;
   margin: 10px;
+  padding: 1.5rem;
   border-radius: 10px;
-  transform: translateX(400%);
+  transform: translateX(100vw);
   transition: transform 0.4s ease;
 }
 
-.lettersAB:nth-of-type(even){
-  transform: translateX(-400%);
+.lettersAB:nth-of-type(even) {
+  transform: translateX(-100vw);
 }
 
-.lettersAB.show{
+.lettersAB.show {
   transform: translateX(0);
 }
 
-.nbaHuge{
+.nbaHuge {
   color: white;
-  font-size: 200%;
-  
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+  text-align: center;
 }
 
-.nbaSmall{
+.nbaSmall {
   color: white;
-  font-size: 100%;
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.1rem);
   font-style: italic;
+  text-align: center;
 }
 
-/* Work Experience */
-#work{
+/* Work Experience Section */
+#work {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-image: url("../images/ivan-aleksic-PDRFeeDniCk-unsplash.jpg"); */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   min-height: 400px;
+  padding: 3rem 1.5rem;
+  background-color: whitesmoke;
 }
 
-#work h2{
+#work h2 {
   margin-top: 5px;
-  margin-bottom: 5px;
-  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-size: clamp(1.25rem, 1.5vw + 1rem, 1.8rem);
   text-decoration: underline;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
 
-#work p{
+#work p {
   margin: 10px;
   font-style: italic;
-  font-size: clamp(0.5rem, 1vw + 1rem, 2rem);
-  color: rgb(0, 0, 0); 
+  font-size: clamp(0.9rem, 1vw + 0.5rem, 1.25rem);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  max-width: 900px;
 }
 
-#work ul{
-  list-style: none;
+#work ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  max-width: 800px;
+  margin-top: 1rem;
 }
 
-#work ul li{
-  margin: 5px;
-  font-size: 1.1rem;
+#work ul li {
+  margin: 8px 0;
+  font-size: clamp(1rem, 0.5vw + 0.9rem, 1.15rem);
   color: black;
 }
 
-/* Education */
-
-#school{
+/* Education Section */
+#school {
   background-color: #24252A;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   min-height: 440px;
+  padding: 3rem 1.5rem;
+  text-align: center;
 }
 
-#school h2{
+#school h2 {
   color: white;
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 1.5vw + 1rem, 1.8rem);
   margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: underline;
 }
 
-.sub{
+.sub {
   color: white;
-  font-size: 1.25rem;
+  font-size: clamp(1.1rem, 1vw + 0.8rem, 1.35rem);
   margin-top: 10px;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.det{
-  color: white;
-  font-size: 1.25rem;
+.det {
+  color: #ccc;
+  font-size: clamp(1rem, 1vw + 0.7rem, 1.25rem);
   font-style: italic;
   margin: 5px;
+  max-width: 800px;
 }
 
-/* Skills */
+/* Responsive Adjustments for Smaller Screens */
+@media screen and (max-width: 768px) {
+  .lettersAB {
+    height: auto;
+    min-height: 160px;
+    padding: 1rem;
+  }
+  
+  #work, #school {
+    padding: 2rem 1rem;
+  }
+}
 
