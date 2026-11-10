@@ -7,7 +7,6 @@
 
 body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  background-color: whitesmoke;
   color: black;
   line-height: 1.6;
 }
@@ -20,7 +19,6 @@ body {
   padding: 4rem 2rem 2rem 2rem;
   min-height: 80vh;
   align-items: center;
-  background-color: whitesmoke;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -75,10 +73,16 @@ body {
   display: flex;
   gap: 1.5rem;
   margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+#Description {
+  background-color: whitesmoke;
 }
 
 .imageLinks1,
-.imageLinks2 {
+.imageLinks2,
+.imageLinks3 {
   height: 45px;
   width: 45px;
   border-radius: 50%;
@@ -86,7 +90,8 @@ body {
 }
 
 .imageLinks1:hover,
-.imageLinks2:hover {
+.imageLinks2:hover,
+.imageLinks3:hover {
   transform: scale(1.1);
 }
 
