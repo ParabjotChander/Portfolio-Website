@@ -45,6 +45,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #24252A;
+  width: 100%;
 }
 
 #upperFoot p {
